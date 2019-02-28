@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-nav-menu',
@@ -6,13 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-menu.component.less']
 })
 export class NavMenuComponent {
-  isExpanded = false;
+  @ViewChild('navbarToggler') navbarToggler:ElementRef;
 
-  collapse() {
-    this.isExpanded = false;
+  navBarTogglerIsVisible() {
+    return this.navbarToggler.nativeElement.offsetParent !== null;
   }
 
-  toggle() {
-    this.isExpanded = !this.isExpanded;
+  public collapseNav() {
+    if (this.navBarTogglerIsVisible()) {
+      this.navbarToggler.nativeElement.click();
+    }
   }
 }
