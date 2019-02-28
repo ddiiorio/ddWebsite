@@ -1,0 +1,49 @@
+<div class="container">
+
+    <!-- Page Heading -->
+    <h1 class="my-4">Welcome,</h1>
+    <div class="col-xs-9 ">
+        <img src="https://ddiiorio.github.io/ddiiorio-website/img/dd.png" class="float-right img-responsive ddImg"/>
+    </div>
+    <h6 class="my-4 greeting">
+        My name is Danny Di Iorio and I am currently enrolled in the Computer Systems Technology program at the British Columbia Institute of Technoloy, in Burnaby, BC.
+        I am actively seeking Jr software developer or IT analyst opportunities in Vancouver, BC starting May 2019. I love to write clean organized code and I dream in Material Design.
+    </h6>
+
+    <div class="row">
+        <div class="col-md-7 my-1">
+            <a mat-raised-button color="primary" (click)="resume()" >Check out my Resume </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7 my-2">
+            <a mat-raised-button color="primary" [routerLink]='["/portfolio"]'>Check out my Porfolio</a>
+        </div>
+    </div>
+</div>
+
+<div class="container social">
+    <h3>Connect with me:</h3>
+
+    <a href="http://github.com/ddiiorio">
+        <img src="https://ddiiorio.github.io/ddiiorio-website/img/git.png" width="60" height="60">
+    </a>
+    <a href="http://www.linkedin.com/in/danielrdiiorio" >
+        <img src="https://ddiiorio.github.io/ddiiorio-website/img/linkedin.png" width="60" height="60">
+    </a>
+    <a href="mailto:dannydiiorio@gmail.com" >
+        <img src="https://ddiiorio.github.io/ddiiorio-website/img/email.png" width="60" height="60">
+    </a>
+</div>
+
+<!-- Slideout -->
+<div class="container">
+    <a href="#/" (click)="sidebar()" mat-raised-button>Gearheads Only</a>
+</div>
+
+<div *ngIf="hidden" class="sidebar">
+    <ul>
+        <li><a href="http://www.instagram.com/_u/6666frs/">
+          <img src="https://ddiiorio.github.io/ddiiorio-website/img/instagram.png" width="60" height="60"></a></li>
+    </ul>
+</div>
