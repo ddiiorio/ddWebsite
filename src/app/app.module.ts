@@ -37,8 +37,8 @@ import { NotificationsService } from './services/notifications.service';
     MatIconModule, 
     MatRippleModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'portfolio', component: PortfolioComponent },
+      { path: '', component: HomeComponent, data: {animation: 'Home'}, pathMatch: 'full' },
+      { path: 'portfolio', component: PortfolioComponent, data: {animation: 'Portfolio'} },
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
