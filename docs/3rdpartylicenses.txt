@@ -89,7 +89,11 @@ THE SOFTWARE.
 
 @angular/material/card
 
+@angular/material/core
+
 @angular/material/divider
+
+@angular/material/list
 
 @angular/material/snack-bar
 
