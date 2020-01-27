@@ -35,7 +35,7 @@ export class NavMenuComponent {
   }
 
   ngAfterViewInit() {
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]') as HTMLInputElement;
     toggleSwitch.addEventListener('change', this.switchTheme, false);
 
     if (this.currentTheme) {
