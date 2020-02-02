@@ -16,6 +16,7 @@
     --font-color: #ffffff;
     --bg-color: #121212;
     --heading-color: #9198a9;
+    --heading2-color: #6e90f6;
     --navbar-color: #242424;
     --card-color: #222222;
 }
@@ -36,6 +37,10 @@ p, li {
 
 h1, h3 {
     color: var(--heading-color);
+}
+
+mat-list-item[_ngcontent-ng-cli-universal-c2] h3[_ngcontent-ng-cli-universal-c2] {
+    color: var(--heading2-color) !important;
 }
 
 mat-card {
@@ -134,6 +139,17 @@ a:hover {
     align-items: center;
     padding: .5rem 1rem;
 }
+
+.theme-switch-wrapper::before {
+    content: '\01F31E';
+    align-self: end;
+}
+
+.theme-switch-wrapper::after {
+    content: '\01F31A';
+    align-self: end;
+}
+
 .theme-switch {
     display: inline-block;
     height: 18px;
