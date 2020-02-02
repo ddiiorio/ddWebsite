@@ -1,6 +1,6 @@
 <body>
   <app-nav-menu></app-nav-menu>
-  <div [@routeAnimations]="prepareRoute(outlet)">
+  <div [@routeAnimations]="prepareRoute(outlet)" (touchstart)="swipe($event, 'start')" (touchend)="swipe($event, 'end')">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
 </body>
