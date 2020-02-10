@@ -137,17 +137,19 @@ a:hover {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    padding: .5rem 1rem;
+    padding: .5rem 1rem .5rem 0;
 }
 
 .theme-switch-wrapper::before {
     content: '\01F31E';
     align-self: end;
+    padding-right: 0.2em;
 }
 
 .theme-switch-wrapper::after {
     content: '\01F31A';
     align-self: end;
+    padding-left: 0.2em;
 }
 
 .theme-switch {
@@ -155,6 +157,7 @@ a:hover {
     height: 18px;
     position: relative;
     width: 40px;
+    margin-bottom: 0 !important;
 }
 
 .theme-switch input {
